@@ -1,0 +1,70 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 300px;
+  min-width: 275px;
+  border: 5px solid #4B371C;
+  height: 90%;
+}
+nav h1 {
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 32px;
+}
+nav ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  height: 88.1%;
+  overflow-y: scroll;
+}
+nav li {
+  display: inline;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 22px;
+  text-indent: 3ch;
+  padding: 10px 0;
+  box-sizing: border-box;
+  border-top: 4px solid #4B371C;
+  color: rgb(136, 136, 136);
+}
+nav li:hover {
+  background-color: lightgrey;
+}
+
+main {
+  margin-left: 310px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  height: 100%;
+  display: absolute;
+  top: 0;
+}
+main section {
+  width: 80%;
+  margin: 0 12% 0 8%;
+}
+main section h1 {
+  font-size: 32px;
+}
+main section p {
+  text-indent: 4ch;
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+main section ul li {
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+main section ul ul li {
+  list-style-type: "☕";
+}
+
+/*# sourceMappingURL=main.css.map */
