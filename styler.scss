@@ -1,5 +1,6 @@
 $font: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 $coffee: #4B371C;
+$blue: rgb(221, 243, 250);
 
 body {
     margin: 0;
@@ -10,10 +11,11 @@ nav {
     position: fixed;
     left:0;
     top:0;
-    width:300px;
+    width:310px;
     min-width: 275px;
     border: 5px solid $coffee;
-    height: 90%;
+    height: 95%;
+    box-sizing: border-box;
 
     h1 {
         text-align: center;
@@ -25,7 +27,7 @@ nav {
         flex-direction: column;
         padding:0;
         margin:0;
-        height: 88.1%;
+        height: 88.7%;
         overflow-y: scroll;
 
     }
@@ -34,16 +36,34 @@ nav {
         display: inline;
         font-family: $font;
         font-size: 22px;
-        text-indent: 3ch;
-        padding: 10px 0;
+        padding-left: 3ch;
+        
         box-sizing: border-box;
         border-top: 4px solid $coffee;
         color: rgb(136, 136, 136);
+        width: 100%;
+        a {
+            display: block;           //Game CHANGER....makes the whole section clickable because a{display:tablesomething} is the default!
+            text-decoration: none;
+            padding: 10px 0;
+            color:rgb(136, 136, 136);
+            width: 100%;
+
+        }
     }
     li:hover {
         background-color: lightgrey;
     }
 }
+
+#box {
+    position: fixed;
+    bottom:0;
+    left:0;
+    background-color: $blue;
+    width: 310px;
+    height: 5%;
+} 
 
 main {
     margin-left:310px;
@@ -51,13 +71,18 @@ main {
     height: 100%;
     display: absolute;
     top:0;
+    background-color: $blue;
+    padding-bottom: 150px;
 
-    section {
+    .main-section {
         width: 80%;
         margin: 0 12% 0 8%;
 
-        h1 {
+        header {
             font-size: 32px;
+            font-weight: 700;
+            margin:0;
+            padding-top: 1em;
         }
         p {
             text-indent: 4ch;
@@ -77,4 +102,14 @@ main {
         }
 
     }
+}
+
+@media (max-width: 1000px) {
+    nav {
+        width: 200px;
+        ul {
+            height: 83%;;
+        }
+    }
+    
 }
